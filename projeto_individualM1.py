@@ -6,19 +6,13 @@ candidatos = [
   ['candidato 5', 'e10_t10_p8_s9'],
 ]
 
-def procurar_candidatos (criterios) =
-  for candidato in candidatos:
-    if criterios["e"] in candidato[1] and \
-        criterios["t"] in candidato[1] and \
-        criterios["p"] in candidato[1] and \
-        criterios["s"] in candidato[1]:
-          return f"Candidato {candidato[0]} - {candidato[1]}"
-  return "Candidato não encontrado"
+critérios = []
+for i, etapa in enumerate(['entrevista', 'teste teórico', 'teste prático', 'soft skills']):
+    critério = int(input(f"Informe a nota mínima para a etapa {etapa}: "))
+    critérios.append(critério)
 
-criterios = {
-    "e": "10",
-    "t": "10",
-    "p": "8",
-    "s": "9"
-}
-print(procurar_candidato(criterios))
+print("Candidatos que atendem aos critérios:")
+for candidato in candidatos:
+    notas_candidato = [int(nota[1:]) for nota in candidato[1].split('_')]
+    if all(nota >= crit for nota, crit in zip(notas_candidato, critérios)):
+        print(candidato[0])
