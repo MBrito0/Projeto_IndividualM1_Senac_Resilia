@@ -6,3 +6,19 @@ candidatos = [
   ['candidato 5', 'e10_t10_p8_s9'],
 ]
 
+def procurar_candidatos (criterios) =
+  for candidato in candidatos:
+    if criterios["e"] in candidato[1] and \
+        criterios["t"] in candidato[1] and \
+        criterios["p"] in candidato[1] and \
+        criterios["s"] in candidato[1]:
+          return f"Candidato {candidato[0]} - {candidato[1]}"
+  return "Candidato não encontrado"
+
+criterios = {
+    "e": "10",
+    "t": "10",
+    "p": "8",
+    "s": "9"
+}
+print(procurar_candidato(criterios))
