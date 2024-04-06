@@ -24,7 +24,7 @@ acordo com os critérios digitados pelo usuário.
 
 
 
-## Funcionalidades
+## Funcionalidades :white_check_mark:
 
 - **Criptografia de Notas**: As notas dos alunos são criptografadas para garantir a privacidade e a segurança das informações.
 - **Descriptografia de Notas**: O sistema é capaz de descriptografar as notas para processamento interno e análise dos resultados.
