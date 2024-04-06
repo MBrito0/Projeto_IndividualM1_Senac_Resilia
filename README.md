@@ -22,6 +22,8 @@ Criar com Python uma lista para armazenar esses resultados (e outros resultados 
 precisa funcionar para qualquer lista que seja inserida nesse formato) e depois uma função que busca o candidato de
 acordo com os critérios digitados pelo usuário. 
 
+## imagem da lista
+![lista](https://raw.githubusercontent.com/MBrito0/Projeto_IndividualM1_Senac_Resilia/main/img/lista.png)
 
 
 ## Funcionalidades :white_check_mark:
